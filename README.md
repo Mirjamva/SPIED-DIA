@@ -2,6 +2,8 @@
 
 SPIED-DIA is a method described in our manuscript: [SPIED-DIA Manuscript](https://www.biorxiv.org/content/10.1101/2024.05.13.593849v1).
 
+![SPIED-DIA Workflow](GitHub_SPIED-DIA/images_readme/SPIED_DIA_overview.jpg)
+
 This GitHub repository includes key scripts necessary to perform SPIED-DIA analysis, as well as the scripts to perform the analyses relevant to the main figures in the manuscript.
 
 ## Repository Structure
@@ -14,7 +16,6 @@ This GitHub repository includes key scripts necessary to perform SPIED-DIA analy
   - **Note:** Specific filter settings (e.g., number of samples per group, threshold for medium confidence identification in light) need to be set manually.
 
 ### Manuscript Analysis Scripts
-- **Verification Scripts**
   - Ensure that the coding and analyses from the manuscript can be replicated.
   - Includes:
     - Application of the SPIED-DIA workflow.
@@ -24,19 +25,27 @@ This GitHub repository includes key scripts necessary to perform SPIED-DIA analy
   - **Note:** Paths and dependencies might need to be corrected and set manually for the scripts to work correctly.
 
 #### Folder Structure
-- **Benchmark 3: Dilution Series**
+- **Benchmark 3: Targeted Dilution Series**
+  
+  <img src="GitHub_SPIED-DIA/images_readme/BM3.jpg" alt="Targeted Dilution Series" width="35%" />
+  
   - Scripts for performing a dilution series of heavy synthetic peptides in light HEK293 (diluted) performed in an *E. coli* background.
+  
 - **Biological Data Analysis**
+  
+  <img src="GitHub_SPIED-DIA/images_readme/CellLinePanel_GFmix.jpg" alt="CellLinePanel-Design" width="20%" />
+  
   - **CellLine-Panel Analysis - Targeted**
     - SPIED-DIA identification/quantification.
     - Differential expression analysis (including limma setup).
     - Visualization.
+  
   - **CellLine-Panel Analysis - Global**
     - **Filter/Normalize & Visualize**
-      - PCA scripts 
+      - PCA scripts
     - **Differential Expression**
     - **Cluster/Kinase Enrichment**
-      - **Note:** relies on PTMsigDB and iKiP-DB
+      - **Note:** Relies on PTMsigDB and iKiP-DB
 
 ## General Analysis Workflow (As Described in the Manuscript)
 
@@ -80,6 +89,8 @@ After acquiring raw data:
       - Perform S/T Kinase Motif Library (Cantley et al.) enrichment analysis.
 
 ## Synergy Testing Details
+
+<img src="GitHub_SPIED-DIA/images_readme/limma_design.jpg" alt="limma-Design" width="30%" />
 
 - **Concept of Synergy:**
   - Synergy is defined as interactions where combined effects exceed individual effects (e.g., 1 + 1 = 3).
