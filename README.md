@@ -90,7 +90,7 @@ After acquiring raw data:
 
 ## Synergy Testing Details
 
-<img src="GitHub_SPIED-DIA/images_readme/limma_design.jpg" alt="limma-Design" width="30%" />
+<img src="GitHub_SPIED-DIA/images_readme/limma_design.jpg" alt="limma-Design" width="80%" />
 
 - **Concept of Synergy:**
   - Synergy is defined as interactions where combined effects exceed individual effects (e.g., 1 + 1 = 3).
